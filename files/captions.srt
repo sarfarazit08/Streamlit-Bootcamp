@@ -1,0 +1,1576 @@
+1
+00:00:02,880 --> 00:00:06,839
+[Applause]
+
+2
+00:00:04,400 --> 00:00:08,280
+hello viewers welcome back to my YouTube
+
+3
+00:00:06,839 --> 00:00:11,280
+channel
+
+4
+00:00:08,280 --> 00:00:15,299
+today in this course we are going to see
+
+5
+00:00:11,280 --> 00:00:17,400
+all about Azure open AI exercises okay
+
+6
+00:00:15,299 --> 00:00:21,660
+so we are going to perform some of the
+
+7
+00:00:17,400 --> 00:00:26,279
+exercises which are on generative AI
+
+8
+00:00:21,660 --> 00:00:28,560
+and the offerings on Azure cloud from
+
+9
+00:00:26,279 --> 00:00:30,480
+openai all the open AI Services which
+
+10
+00:00:28,560 --> 00:00:33,180
+are available on azure
+
+11
+00:00:30,480 --> 00:00:35,640
+we are going to do some Hands-On on that
+
+12
+00:00:33,180 --> 00:00:38,820
+for that I have also created Azure
+
+13
+00:00:35,640 --> 00:00:41,100
+subscription using my account this month
+
+14
+00:00:38,820 --> 00:00:43,739
+you can use this email if you have any
+
+15
+00:00:41,100 --> 00:00:45,059
+queries to write it for me so let's
+
+16
+00:00:43,739 --> 00:00:47,520
+proceed
+
+17
+00:00:45,059 --> 00:00:50,219
+so in this code first handphone is
+
+18
+00:00:47,520 --> 00:00:51,480
+exploring generative AI with being
+
+19
+00:00:50,219 --> 00:00:54,360
+copied
+
+20
+00:00:51,480 --> 00:00:56,820
+so let's open this in a new tab
+
+21
+00:00:54,360 --> 00:00:58,079
+and move to this new tab
+
+22
+00:00:56,820 --> 00:01:00,059
+here
+
+23
+00:00:58,079 --> 00:01:03,239
+we'll go through this
+
+24
+00:01:00,059 --> 00:01:06,960
+whole course for Hands-On write-up given
+
+25
+00:01:03,239 --> 00:01:09,960
+here on this page one bye
+
+26
+00:01:06,960 --> 00:01:11,760
+so before you start you need a personal
+
+27
+00:01:09,960 --> 00:01:14,400
+Microsoft account
+
+28
+00:01:11,760 --> 00:01:16,799
+if you do not have one go to sign up
+
+29
+00:01:14,400 --> 00:01:19,140
+live.com to sign up and create a
+
+30
+00:01:16,799 --> 00:01:23,340
+personal account which I already have
+
+31
+00:01:19,140 --> 00:01:25,920
+which is surprised it 08
+
+32
+00:01:23,340 --> 00:01:27,240
+which I already have so I'll be using
+
+33
+00:01:25,920 --> 00:01:28,560
+this account
+
+34
+00:01:27,240 --> 00:01:31,259
+okay
+
+35
+00:01:28,560 --> 00:01:33,420
+now open bing.com and sign in with your
+
+36
+00:01:31,259 --> 00:01:37,320
+personal Microsoft account
+
+37
+00:01:33,420 --> 00:01:38,820
+so let me open this in a new tab
+
+38
+00:01:37,320 --> 00:01:41,880
+okay
+
+39
+00:01:38,820 --> 00:01:43,860
+I've opened it and I have also signed in
+
+40
+00:01:41,880 --> 00:01:45,540
+using that same account
+
+41
+00:01:43,860 --> 00:01:48,360
+right
+
+42
+00:01:45,540 --> 00:01:50,460
+so that's the first thing I have done
+
+43
+00:01:48,360 --> 00:01:52,380
+so I have already signed
+
+44
+00:01:50,460 --> 00:01:54,720
+okay
+
+45
+00:01:52,380 --> 00:01:58,140
+if you don't know how to sign in
+
+46
+00:01:54,720 --> 00:02:00,140
+you will see this type of Icon where if
+
+47
+00:01:58,140 --> 00:02:03,240
+you are signed out
+
+48
+00:02:00,140 --> 00:02:05,759
+you can click on sign in button which
+
+49
+00:02:03,240 --> 00:02:07,680
+will be showing here and then give all
+
+50
+00:02:05,759 --> 00:02:10,319
+the Account Details like email ID and
+
+51
+00:02:07,680 --> 00:02:12,319
+password and sign in using Microsoft
+
+52
+00:02:10,319 --> 00:02:15,000
+Live account
+
+53
+00:02:12,319 --> 00:02:17,459
+okay and for us creating that live
+
+54
+00:02:15,000 --> 00:02:18,660
+account we can go to this site and
+
+55
+00:02:17,459 --> 00:02:21,000
+create one
+
+56
+00:02:18,660 --> 00:02:24,540
+now moving
+
+57
+00:02:21,000 --> 00:02:26,580
+so once you sign in using your work or
+
+58
+00:02:24,540 --> 00:02:29,640
+school account you'll see a slightly
+
+59
+00:02:26,580 --> 00:02:31,980
+different user experience then what I
+
+60
+00:02:29,640 --> 00:02:33,840
+see as a personal account so this is my
+
+61
+00:02:31,980 --> 00:02:37,340
+personal Microsoft
+
+62
+00:02:33,840 --> 00:02:41,099
+black account but you'll see a different
+
+63
+00:02:37,340 --> 00:02:44,400
+uh UI
+
+64
+00:02:41,099 --> 00:02:46,319
+so that's for being Enterprise chat okay
+
+65
+00:02:44,400 --> 00:02:47,459
+because it's related to your work and
+
+66
+00:02:46,319 --> 00:02:50,220
+explore
+
+67
+00:02:47,459 --> 00:02:51,780
+so it will be an Enterprise check
+
+68
+00:02:50,220 --> 00:02:54,180
+next
+
+69
+00:02:51,780 --> 00:02:55,560
+select chat from the menu at the top of
+
+70
+00:02:54,180 --> 00:02:59,720
+the screen
+
+71
+00:02:55,560 --> 00:03:01,680
+chat brings you to bring for pilot okay
+
+72
+00:02:59,720 --> 00:03:05,040
+let's chat
+
+73
+00:03:01,680 --> 00:03:09,120
+and it is taking me to
+
+74
+00:03:05,040 --> 00:03:11,900
+this chat interface being chat interview
+
+75
+00:03:09,120 --> 00:03:11,900
+next
+
+76
+00:03:12,780 --> 00:03:18,300
+what this means is that unlike search
+
+77
+00:03:15,120 --> 00:03:20,040
+alone like normally what we do in Google
+
+78
+00:03:18,300 --> 00:03:22,800
+search or Bing search
+
+79
+00:03:20,040 --> 00:03:27,900
+we have some search bar we click some
+
+80
+00:03:22,800 --> 00:03:30,959
+words here some points here and then
+
+81
+00:03:27,900 --> 00:03:34,920
+we just hit enter or click on search
+
+82
+00:03:30,959 --> 00:03:37,860
+button and we can search that
+
+83
+00:03:34,920 --> 00:03:41,220
+online using the Bing or Google search
+
+84
+00:03:37,860 --> 00:03:42,900
+in this or any other searching
+
+85
+00:03:41,220 --> 00:03:45,599
+but here
+
+86
+00:03:42,900 --> 00:03:48,720
+unlike any search engine
+
+87
+00:03:45,599 --> 00:03:50,700
+Bing co-pilot can put together new
+
+88
+00:03:48,720 --> 00:03:51,840
+responses based on natural language
+
+89
+00:03:50,700 --> 00:03:54,540
+modeling
+
+90
+00:03:51,840 --> 00:03:56,040
+so it works on a NLP or natural language
+
+91
+00:03:54,540 --> 00:03:59,879
+processing
+
+92
+00:03:56,040 --> 00:04:01,739
+which gives responses similar to what a
+
+93
+00:03:59,879 --> 00:04:04,019
+human
+
+94
+00:04:01,739 --> 00:04:08,280
+normally uh
+
+95
+00:04:04,019 --> 00:04:10,400
+speaks or relation right so that kind of
+
+96
+00:04:08,280 --> 00:04:12,480
+uh language
+
+97
+00:04:10,400 --> 00:04:14,939
+these AIS
+
+98
+00:04:12,480 --> 00:04:19,139
+artificial intelligence built into the
+
+99
+00:04:14,939 --> 00:04:21,780
+Bing browser Bing chat it can provide
+
+100
+00:04:19,139 --> 00:04:25,500
+and it's basically using Bing
+
+101
+00:04:21,780 --> 00:04:28,560
+is using chat GPT fourth version right
+
+102
+00:04:25,500 --> 00:04:31,699
+we have other old versions like charity
+
+103
+00:04:28,560 --> 00:04:35,639
+3.5 as well
+
+104
+00:04:31,699 --> 00:04:37,800
+but here Bing chat is using chat GPT 4
+
+105
+00:04:35,639 --> 00:04:39,780
+okay
+
+106
+00:04:37,800 --> 00:04:42,960
+now towards the bottom of the screen
+
+107
+00:04:39,780 --> 00:04:46,080
+you'll see a window ask me anything
+
+108
+00:04:42,960 --> 00:04:47,940
+let me keep these steps side by side so
+
+109
+00:04:46,080 --> 00:04:48,960
+that way we'll be able to see it more
+
+110
+00:04:47,940 --> 00:04:52,500
+properly
+
+111
+00:04:48,960 --> 00:04:55,560
+okay so this is our chat interface and
+
+112
+00:04:52,500 --> 00:04:56,940
+here it is saying ask me anything
+
+113
+00:04:55,560 --> 00:04:59,300
+right
+
+114
+00:04:56,940 --> 00:05:01,800
+if you enter the prompts into the window
+
+115
+00:04:59,300 --> 00:05:04,919
+beam copilot uses the entire
+
+116
+00:05:01,800 --> 00:05:07,199
+conversation ready to return the sponsor
+
+117
+00:05:04,919 --> 00:05:10,320
+so let's try one thing
+
+118
+00:05:07,199 --> 00:05:11,220
+so in the prompt or here in the ask me
+
+119
+00:05:10,320 --> 00:05:13,800
+anything
+
+120
+00:05:11,220 --> 00:05:15,900
+I am going to write this one what are
+
+121
+00:05:13,800 --> 00:05:17,940
+the three pros and cons of traveling in
+
+122
+00:05:15,900 --> 00:05:20,340
+a winter in the winter
+
+123
+00:05:17,940 --> 00:05:23,520
+I can also speak using this microphone
+
+124
+00:05:20,340 --> 00:05:28,400
+or I can type the whole thing here
+
+125
+00:05:23,520 --> 00:05:28,400
+let me just speak it in the microphone
+
+126
+00:05:28,500 --> 00:05:31,880
+I'll allow microphone
+
+127
+00:05:32,220 --> 00:05:37,380
+what are the three pros and cons of
+
+128
+00:05:34,979 --> 00:05:39,840
+traveling in the winter
+
+129
+00:05:37,380 --> 00:05:42,180
+so this is the prompt I have given
+
+130
+00:05:39,840 --> 00:05:44,400
+searching for pros and cons of traveling
+
+131
+00:05:42,180 --> 00:05:46,199
+in the winter traveling in Winter has
+
+132
+00:05:44,400 --> 00:05:48,600
+its own set of advantages and
+
+133
+00:05:46,199 --> 00:05:50,940
+disadvantages here are some of the pros
+
+134
+00:05:48,600 --> 00:05:53,340
+and cons of traveling in Winter Pros
+
+135
+00:05:50,940 --> 00:05:55,199
+cheaper prices winter is considered
+
+136
+00:05:53,340 --> 00:05:57,360
+Enough season for travel which means
+
+137
+00:05:55,199 --> 00:05:59,400
+that many airlines hotels enter
+
+138
+00:05:57,360 --> 00:06:02,160
+operators offer discounts to attract
+
+139
+00:05:59,400 --> 00:06:04,380
+more customers fewer crowds since winter
+
+140
+00:06:02,160 --> 00:06:05,580
+is not a popular time to travel there
+
+141
+00:06:04,380 --> 00:06:07,919
+are fewer tourists at popular
+
+142
+00:06:05,580 --> 00:06:09,479
+destinations this means that you can
+
+143
+00:06:07,919 --> 00:06:11,820
+enjoy the sights and sounds without
+
+144
+00:06:09,479 --> 00:06:13,919
+having to deal with large crowds winter
+
+145
+00:06:11,820 --> 00:06:16,440
+sports if you're a fan of winter sports
+
+146
+00:06:13,919 --> 00:06:18,780
+like skiing snowboarding or ice skating
+
+147
+00:06:16,440 --> 00:06:19,440
+then traveling in winter is perfect for
+
+148
+00:06:18,780 --> 00:06:21,660
+you
+
+149
+00:06:19,440 --> 00:06:24,060
+many scale Resorts offer great deals
+
+150
+00:06:21,660 --> 00:06:26,220
+during the winter months cons
+
+151
+00:06:24,060 --> 00:06:28,319
+bad weather winter weather can be
+
+152
+00:06:26,220 --> 00:06:30,600
+unpredictable and harsh which can led to
+
+153
+00:06:28,319 --> 00:06:33,120
+flight cancellations delays and other
+
+154
+00:06:30,600 --> 00:06:35,340
+travel disruptions limited daylight
+
+155
+00:06:33,120 --> 00:06:37,139
+during the winter months the days are
+
+156
+00:06:35,340 --> 00:06:38,900
+shorter which means that you have less
+
+157
+00:06:37,139 --> 00:06:41,639
+time to explore your destination
+
+158
+00:06:38,900 --> 00:06:43,259
+seasonal closures some attractions and
+
+159
+00:06:41,639 --> 00:06:44,819
+activities may be closed during the
+
+160
+00:06:43,259 --> 00:06:48,600
+winter months due to weather conditions
+
+161
+00:06:44,819 --> 00:06:51,539
+or seasonal closures I hope
+
+162
+00:06:48,600 --> 00:06:54,060
+so once you click to stop the readout
+
+163
+00:06:51,539 --> 00:06:57,479
+then it will stop in between whatever it
+
+164
+00:06:54,060 --> 00:07:00,240
+is reading out all right so all this
+
+165
+00:06:57,479 --> 00:07:03,360
+response that you get it's very
+
+166
+00:07:00,240 --> 00:07:05,940
+customized or bulleted point a very
+
+167
+00:07:03,360 --> 00:07:08,520
+structured way right you can see the
+
+168
+00:07:05,940 --> 00:07:11,220
+response with all the headings mentioned
+
+169
+00:07:08,520 --> 00:07:15,000
+here pros and cons and each bullet
+
+170
+00:07:11,220 --> 00:07:18,300
+points have subheadings as well right
+
+171
+00:07:15,000 --> 00:07:21,479
+but that's what we are going to see as a
+
+172
+00:07:18,300 --> 00:07:23,520
+chat response now here
+
+173
+00:07:21,479 --> 00:07:26,759
+if I just
+
+174
+00:07:23,520 --> 00:07:29,039
+give find me three pros right I'll copy
+
+175
+00:07:26,759 --> 00:07:31,740
+this and paste it here
+
+176
+00:07:29,039 --> 00:07:35,280
+and just send it or submit it
+
+177
+00:07:31,740 --> 00:07:39,060
+okay so it will give me the response
+
+178
+00:07:35,280 --> 00:07:41,099
+of pros of traveling inventor well I
+
+179
+00:07:39,060 --> 00:07:43,500
+gave only these three
+
+180
+00:07:41,099 --> 00:07:46,319
+or four words right find me three more
+
+181
+00:07:43,500 --> 00:07:50,699
+Pros right but
+
+182
+00:07:46,319 --> 00:07:53,160
+chat uh this chat interface or chat GPT
+
+183
+00:07:50,699 --> 00:07:55,800
+already knows about the context in which
+
+184
+00:07:53,160 --> 00:07:56,819
+I am taught right which is about the
+
+185
+00:07:55,800 --> 00:07:59,819
+winter
+
+186
+00:07:56,819 --> 00:08:02,039
+pros and cons winter season or traveling
+
+187
+00:07:59,819 --> 00:08:05,039
+in the winter season right so that's the
+
+188
+00:08:02,039 --> 00:08:06,960
+context like what are the pros and cons
+
+189
+00:08:05,039 --> 00:08:09,479
+of traveling in the winter
+
+190
+00:08:06,960 --> 00:08:12,539
+so this is the actual context traveling
+
+191
+00:08:09,479 --> 00:08:15,120
+in Wind okay and if I'm asking for pros
+
+192
+00:08:12,539 --> 00:08:18,060
+so it is already
+
+193
+00:08:15,120 --> 00:08:19,680
+giving me these three pros of
+
+194
+00:08:18,060 --> 00:08:22,199
+traveling in winter
+
+195
+00:08:19,680 --> 00:08:25,259
+so it already knows about the conference
+
+196
+00:08:22,199 --> 00:08:27,419
+now if I'll just write
+
+197
+00:08:25,259 --> 00:08:30,240
+this one okay
+
+198
+00:08:27,419 --> 00:08:31,800
+so let me just use my microphone to give
+
+199
+00:08:30,240 --> 00:08:34,260
+this prompt
+
+200
+00:08:31,800 --> 00:08:36,240
+what are three places I can go to find
+
+201
+00:08:34,260 --> 00:08:38,700
+fewer crowds
+
+202
+00:08:36,240 --> 00:08:40,740
+searching for places to travel in winter
+
+203
+00:08:38,700 --> 00:08:43,860
+with fewer crowd
+
+204
+00:08:40,740 --> 00:08:46,940
+I stopped playing this but I can get the
+
+205
+00:08:43,860 --> 00:08:50,160
+response still right so readout is
+
+206
+00:08:46,940 --> 00:08:54,540
+stopped but the response is
+
+207
+00:08:50,160 --> 00:08:58,620
+coming from chat Equity AI so we get
+
+208
+00:08:54,540 --> 00:09:01,740
+this three uh results a responses about
+
+209
+00:08:58,620 --> 00:09:06,440
+the places where we can travel and we'll
+
+210
+00:09:01,740 --> 00:09:06,440
+have fewer Cloud crowds okay
+
+211
+00:09:06,800 --> 00:09:12,300
+Italy Saint Lucia and Mount Fiji or PC
+
+212
+00:09:11,220 --> 00:09:14,820
+in Japan
+
+213
+00:09:12,300 --> 00:09:18,839
+all these options we are getting right
+
+214
+00:09:14,820 --> 00:09:22,500
+so notice that the Bingo pilot is able
+
+215
+00:09:18,839 --> 00:09:25,140
+to give a related response okay
+
+216
+00:09:22,500 --> 00:09:26,580
+it can drop earlier memories of the
+
+217
+00:09:25,140 --> 00:09:29,640
+conversation
+
+218
+00:09:26,580 --> 00:09:31,320
+that's as it continue as a result the
+
+219
+00:09:29,640 --> 00:09:33,480
+responses you get may not be directly
+
+220
+00:09:31,320 --> 00:09:36,000
+related to the traveling
+
+221
+00:09:33,480 --> 00:09:39,420
+this is largely due to the Token input
+
+222
+00:09:36,000 --> 00:09:41,940
+limitation when chat remembers earlier
+
+223
+00:09:39,420 --> 00:09:44,459
+parts of the conversation or the context
+
+224
+00:09:41,940 --> 00:09:46,380
+of the conversation it is because it has
+
+225
+00:09:44,459 --> 00:09:47,580
+saved a certain amount of tokens from
+
+226
+00:09:46,380 --> 00:09:49,320
+the conversation
+
+227
+00:09:47,580 --> 00:09:51,899
+earlier we gave
+
+228
+00:09:49,320 --> 00:09:54,600
+this prompt right
+
+229
+00:09:51,899 --> 00:09:58,800
+pros and cons of traveling it already
+
+230
+00:09:54,600 --> 00:10:01,800
+got the context by that query from that
+
+231
+00:09:58,800 --> 00:10:03,360
+query yes so it already knows about the
+
+232
+00:10:01,800 --> 00:10:06,000
+content okay
+
+233
+00:10:03,360 --> 00:10:10,019
+as new tokens are introduced by your new
+
+234
+00:10:06,000 --> 00:10:14,519
+prompt and responses Chat Me Network
+
+235
+00:10:10,019 --> 00:10:17,220
+so as we go further and give some varied
+
+236
+00:10:14,519 --> 00:10:19,440
+prompts or different prompts which is
+
+237
+00:10:17,220 --> 00:10:23,220
+different than
+
+238
+00:10:19,440 --> 00:10:25,080
+this context existing contract then the
+
+239
+00:10:23,220 --> 00:10:28,080
+older tokens will
+
+240
+00:10:25,080 --> 00:10:31,080
+get removed and newer tokens
+
+241
+00:10:28,080 --> 00:10:33,600
+based on our neighbor prompts and topics
+
+242
+00:10:31,080 --> 00:10:36,200
+that we are writing here it will be
+
+243
+00:10:33,600 --> 00:10:39,320
+saved within chat GPT
+
+244
+00:10:36,200 --> 00:10:42,420
+so it will remember the new tokens
+
+245
+00:10:39,320 --> 00:10:44,820
+basically and reply based on the newer
+
+246
+00:10:42,420 --> 00:10:48,060
+token the new topic button next to the
+
+247
+00:10:44,820 --> 00:10:49,800
+chat window is useful being co-pilot to
+
+248
+00:10:48,060 --> 00:10:53,040
+clear the previous conversion so if you
+
+249
+00:10:49,800 --> 00:10:55,200
+click on the new topic it will omit or
+
+250
+00:10:53,040 --> 00:10:59,579
+remove all the folder
+
+251
+00:10:55,200 --> 00:11:02,779
+uh tokens basically and it will start a
+
+252
+00:10:59,579 --> 00:11:02,779
+new topic with a
+
+253
+00:11:07,760 --> 00:11:13,200
+without any problems
+
+254
+00:11:10,620 --> 00:11:16,380
+so this will be very new topic now we
+
+255
+00:11:13,200 --> 00:11:18,720
+can also give prompts like create an
+
+256
+00:11:16,380 --> 00:11:21,660
+image of an elephant eating a hamburger
+
+257
+00:11:18,720 --> 00:11:23,100
+so this will generate
+
+258
+00:11:21,660 --> 00:11:27,720
+a new
+
+259
+00:11:23,100 --> 00:11:31,440
+images okay using Dali okay Dali's
+
+260
+00:11:27,720 --> 00:11:33,899
+generative AI for image generation right
+
+261
+00:11:31,440 --> 00:11:36,839
+so it will generate images based on the
+
+262
+00:11:33,899 --> 00:11:39,899
+text prompt that we will give
+
+263
+00:11:36,839 --> 00:11:41,519
+so let's give this from instead I will
+
+264
+00:11:39,899 --> 00:11:43,880
+give a different prompt and let's see
+
+265
+00:11:41,519 --> 00:11:43,880
+what happens
+
+266
+00:11:43,980 --> 00:11:48,360
+create an image of a dog eating a
+
+267
+00:11:46,980 --> 00:11:51,300
+hamburger
+
+268
+00:11:48,360 --> 00:11:55,160
+searching for dog
+
+269
+00:11:51,300 --> 00:11:55,160
+dog eating hamburger right
+
+270
+00:11:57,000 --> 00:12:03,360
+so that's my problem and here you can
+
+271
+00:12:00,000 --> 00:12:04,320
+see the response which is almost look
+
+272
+00:12:03,360 --> 00:12:08,760
+like
+
+273
+00:12:04,320 --> 00:12:11,940
+uh which is looking very real like a dog
+
+274
+00:12:08,760 --> 00:12:15,480
+is eating a hamburger right it's
+
+275
+00:12:11,940 --> 00:12:18,120
+generated by Dali
+
+276
+00:12:15,480 --> 00:12:20,040
+now if you notice the responses may look
+
+277
+00:12:18,120 --> 00:12:22,860
+similar but not the same
+
+278
+00:12:20,040 --> 00:12:25,320
+okay these are looking very similar but
+
+279
+00:12:22,860 --> 00:12:28,860
+all these images are different
+
+280
+00:12:25,320 --> 00:12:33,000
+maybe from side view from
+
+281
+00:12:28,860 --> 00:12:35,700
+top or or front view like that okay
+
+282
+00:12:33,000 --> 00:12:38,100
+so these are very different
+
+283
+00:12:35,700 --> 00:12:40,079
+responsive
+
+284
+00:12:38,100 --> 00:12:42,540
+image responsible
+
+285
+00:12:40,079 --> 00:12:45,000
+so in the response there is a touch at
+
+286
+00:12:42,540 --> 00:12:47,399
+the bottom that means powered by darling
+
+287
+00:12:45,000 --> 00:12:49,380
+so consider how Dali is based on large
+
+288
+00:12:47,399 --> 00:12:52,620
+language model as your natural language
+
+289
+00:12:49,380 --> 00:12:54,240
+input generates image so Dali is nothing
+
+290
+00:12:52,620 --> 00:12:57,060
+but uh
+
+291
+00:12:54,240 --> 00:12:58,200
+image generation AI or artificial
+
+292
+00:12:57,060 --> 00:13:00,839
+intelligence
+
+293
+00:12:58,200 --> 00:13:02,459
+which is trained on
+
+294
+00:13:00,839 --> 00:13:06,120
+so many images
+
+295
+00:13:02,459 --> 00:13:07,260
+to generate realistic images based on
+
+296
+00:13:06,120 --> 00:13:09,240
+our text
+
+297
+00:13:07,260 --> 00:13:11,579
+so whatever the text prompt we are given
+
+298
+00:13:09,240 --> 00:13:16,139
+like dog eating hamburger
+
+299
+00:13:11,579 --> 00:13:19,019
+it is trying to take that text as tokens
+
+300
+00:13:16,139 --> 00:13:20,880
+and then based on the tokens trying to
+
+301
+00:13:19,019 --> 00:13:24,420
+identify
+
+302
+00:13:20,880 --> 00:13:29,240
+context like hamburger
+
+303
+00:13:24,420 --> 00:13:30,779
+dog and the process is about 80.
+
+304
+00:13:29,240 --> 00:13:34,200
+or
+
+305
+00:13:30,779 --> 00:13:36,540
+images which are almost similar but not
+
+306
+00:13:34,200 --> 00:13:40,139
+the same and
+
+307
+00:13:36,540 --> 00:13:42,620
+considering this talk so a dog eating
+
+308
+00:13:40,139 --> 00:13:42,620
+handle
+
+309
+00:13:42,959 --> 00:13:48,000
+now return to bingo pilot chat by
+
+310
+00:13:45,600 --> 00:13:50,519
+clicking on the Microsoft Bing icon on
+
+311
+00:13:48,000 --> 00:13:51,720
+the top right corner of the screen
+
+312
+00:13:50,519 --> 00:13:56,160
+okay
+
+313
+00:13:51,720 --> 00:13:59,220
+baby click on this so this opens up the
+
+314
+00:13:56,160 --> 00:14:00,959
+small side window right now let's see an
+
+315
+00:13:59,220 --> 00:14:04,200
+example of fourth generation and
+
+316
+00:14:00,959 --> 00:14:08,540
+translate type in a prompt use
+
+317
+00:14:04,200 --> 00:14:08,540
+python to create a list okay
+
+318
+00:14:08,639 --> 00:14:11,779
+just give this problem
+
+319
+00:14:12,120 --> 00:14:15,320
+and paste it here
+
+320
+00:14:16,860 --> 00:14:21,839
+and submit it
+
+321
+00:14:19,260 --> 00:14:24,839
+use Python to create a list
+
+322
+00:14:21,839 --> 00:14:27,779
+and here you can see some examples
+
+323
+00:14:24,839 --> 00:14:28,680
+related to python code where it's trying
+
+324
+00:14:27,779 --> 00:14:31,500
+to
+
+325
+00:14:28,680 --> 00:14:34,620
+create an empty list
+
+326
+00:14:31,500 --> 00:14:37,980
+and then it's time to add
+
+327
+00:14:34,620 --> 00:14:40,440
+three numbers one two and three within
+
+328
+00:14:37,980 --> 00:14:43,019
+that list and then here we can see the
+
+329
+00:14:40,440 --> 00:14:44,639
+output if we print the list
+
+330
+00:14:43,019 --> 00:14:45,839
+okay
+
+331
+00:14:44,639 --> 00:14:48,420
+so
+
+332
+00:14:45,839 --> 00:14:51,139
+there is a shortcut way like that my
+
+333
+00:14:48,420 --> 00:14:51,139
+list equal to
+
+334
+00:14:51,300 --> 00:14:56,160
+within this Square braces you put all
+
+335
+00:14:54,180 --> 00:14:59,880
+the list items like one two and three
+
+336
+00:14:56,160 --> 00:15:03,420
+numbers so this is how chat repeat is
+
+337
+00:14:59,880 --> 00:15:06,360
+also able to give us python codes right
+
+338
+00:15:03,420 --> 00:15:07,740
+now type in the prompt translate that
+
+339
+00:15:06,360 --> 00:15:09,839
+into shisha
+
+340
+00:15:07,740 --> 00:15:13,440
+so the current Port that we have in the
+
+341
+00:15:09,839 --> 00:15:15,300
+python we want it to be converted to a C
+
+342
+00:15:13,440 --> 00:15:19,199
+sharp based port
+
+343
+00:15:15,300 --> 00:15:21,600
+so we'll just click or give the prompt
+
+344
+00:15:19,199 --> 00:15:23,820
+translate that into C sharp
+
+345
+00:15:21,600 --> 00:15:27,839
+okay
+
+346
+00:15:23,820 --> 00:15:30,240
+and then that code will be translated
+
+347
+00:15:27,839 --> 00:15:33,240
+into a C sharp based coding where we are
+
+348
+00:15:30,240 --> 00:15:36,360
+creating a new list which is following a
+
+349
+00:15:33,240 --> 00:15:37,800
+C sharp syntax right then we are adding
+
+350
+00:15:36,360 --> 00:15:40,380
+three
+
+351
+00:15:37,800 --> 00:15:42,360
+numbers one two and three and then we
+
+352
+00:15:40,380 --> 00:15:46,500
+are using console.writeline
+
+353
+00:15:42,360 --> 00:15:48,300
+to print that list of items okay one by
+
+354
+00:15:46,500 --> 00:15:51,120
+one using four original
+
+355
+00:15:48,300 --> 00:15:53,760
+okay and you're creating over the
+
+356
+00:15:51,120 --> 00:15:57,600
+list items okay
+
+357
+00:15:53,760 --> 00:15:59,820
+so this is the result or we can create
+
+358
+00:15:57,600 --> 00:16:02,160
+a new list by hardboarding the values
+
+359
+00:15:59,820 --> 00:16:03,480
+like one to n directly
+
+360
+00:16:02,160 --> 00:16:06,779
+okay
+
+361
+00:16:03,480 --> 00:16:08,880
+so both ways we can create
+
+362
+00:16:06,779 --> 00:16:10,560
+a list
+
+363
+00:16:08,880 --> 00:16:13,260
+now
+
+364
+00:16:10,560 --> 00:16:15,839
+here is a bonus form what are the three
+
+365
+00:16:13,260 --> 00:16:17,279
+examples of generative AI helping people
+
+366
+00:16:15,839 --> 00:16:19,740
+okay
+
+367
+00:16:17,279 --> 00:16:23,600
+so let's do that
+
+368
+00:16:19,740 --> 00:16:23,600
+we'll copy this
+
+369
+00:16:24,060 --> 00:16:30,540
+okay and let's put here in this chat
+
+370
+00:16:28,260 --> 00:16:34,620
+window I'll close this you can always
+
+371
+00:16:30,540 --> 00:16:36,420
+call this chat window from here or you
+
+372
+00:16:34,620 --> 00:16:40,740
+can go to
+
+373
+00:16:36,420 --> 00:16:42,360
+this vendor and then you can put your
+
+374
+00:16:40,740 --> 00:16:44,279
+prompt here
+
+375
+00:16:42,360 --> 00:16:47,699
+let me submit this
+
+376
+00:16:44,279 --> 00:16:50,040
+so these are the examples of
+
+377
+00:16:47,699 --> 00:16:53,040
+generative AI helping people like
+
+378
+00:16:50,040 --> 00:16:54,839
+healthcare accessibility product
+
+379
+00:16:53,040 --> 00:16:57,839
+development
+
+380
+00:16:54,839 --> 00:17:00,180
+boarding that would be more
+
+381
+00:16:57,839 --> 00:17:04,799
+we ask only three so it's giving three
+
+382
+00:17:00,180 --> 00:17:08,280
+responses so that's about
+
+383
+00:17:04,799 --> 00:17:10,260
+exploring the generative AI with bank so
+
+384
+00:17:08,280 --> 00:17:12,980
+that's all for now in the next section
+
+385
+00:17:10,260 --> 00:17:16,860
+we'll explore Azure open AI Services
+
+386
+00:17:12,980 --> 00:17:17,880
+okay and for that we are going to use or
+
+387
+00:17:16,860 --> 00:17:20,520
+azure
+
+388
+00:17:17,880 --> 00:17:22,500
+uh Cloud portal
+
+389
+00:17:20,520 --> 00:17:23,459
+please like share and subscribe to my
+
+390
+00:17:22,500 --> 00:17:26,939
+channel
+
+391
+00:17:23,459 --> 00:17:30,120
+and also comment below if you found this
+
+392
+00:17:26,939 --> 00:17:31,790
+video interesting thank you bye bye
+
+393
+00:17:30,120 --> 00:17:47,519
+foreign
+
+394
+00:17:31,790 --> 00:17:47,519
+[Music]
+
